@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* Background */
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+.astronaut{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    user-select: none;
+}
+
+.hero {
+    background-image: url("./assets/wave.svg");   
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#astronaut{
+    animation: pop 2s ease-in-out infinite;
+}
+
+@keyframes pop {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+#naSignIn{
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+#naSignUp {
+    background-color: rgba(0, 0, 0, 0.2)
+}
